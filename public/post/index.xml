@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Minimo</title>
+    <link>https://mitrilmad.github.io/post/</link>
+    <description>Recent content in Posts on Minimo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 31 Mar 2017 12:49:35 +0900</lastBuildDate>
+    
+	<atom:link href="https://mitrilmad.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>scala essential</title>
+      <link>https://mitrilmad.github.io/post/scala-essential/</link>
+      <pubDate>Fri, 31 Mar 2017 12:49:35 +0900</pubDate>
+      
+      <guid>https://mitrilmad.github.io/post/scala-essential/</guid>
+      <description>Algebraic data types
+ Model data with logical ors and logical ands. A website visitor is :
+ logged in; or anonymous  A logged in user has:
+ an ID; and
+ an email address
+ Structure of the code follows the structure of the data.
+ Two patterns:
+ product types (and) sum types (or)  Product type: A has a B and C
+    final case class A(b: B, c: C) A has a B and C   Sum type: A is a B or C   sealed trait A final case class B() extends A final case class C() extends A A is a B or C   Sum and product together makse algebraic data types.</description>
+    </item>
+    
+    <item>
+      <title>linux uid issues</title>
+      <link>https://mitrilmad.github.io/post/uid-issues/</link>
+      <pubDate>Thu, 08 Dec 2016 16:15:35 +0900</pubDate>
+      
+      <guid>https://mitrilmad.github.io/post/uid-issues/</guid>
+      <description>운영시스템에서 경험한 이슈를 기록 해 봅니다.
+1.소유자가 없는 파일들을 / 에서 find -nouser 옵션으로 검색 했습니다.
+2.찾은 파일들의 Owner를 루트로 변경 했습니다. (디스크를 공유하는 서버1, 서버2 두대에서 모두 동일한 작업을 함)
+3.배치에서 접근하는 파일에 권한 문제가 발생했습니다.
+4.실제 파일의 Owner를 확인 해 본 결과 루트로 변경 된 것을 확인 했습니다.
+5.find 의 -nouser 옵션은 /etc/passwd 에 있는 uid 값을 검색해서 없는 경우의 파일이나 디렉토리를 찾아주게 되는데, 문제가 된 파일은 서버1 의 /etc/passwd 에 있는 계정으로 생성하는 파일인데 왜 바뀐건지.</description>
+    </item>
+    
+    <item>
+      <title>My First Blog</title>
+      <link>https://mitrilmad.github.io/post/my-first-blog/</link>
+      <pubDate>Sun, 04 Dec 2016 16:15:35 +0900</pubDate>
+      
+      <guid>https://mitrilmad.github.io/post/my-first-blog/</guid>
+      <description>hello, World! </description>
+    </item>
+    
+  </channel>
+</rss>
